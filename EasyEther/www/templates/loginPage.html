@@ -1,0 +1,39 @@
+<ion-view title="Login Page" hide-nav-bar="true" id="page1" style="background-color:#D8D8DD;" class=" ">
+    <ion-content padding="true" class="manual-ios-statusbar-padding" scroll="false">
+        
+		<div class="spacer" style="width: 300px; height: 1.98959px;"></div>
+		<div class="spacer" style="width: 300px; height: 11.9844px;"></div>		
+        <div class="">
+            <img src="img/zTlvytEfTAeqNOQdPh7G_junyi.png" width="60%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+		
+        <h2 id="loginPage-heading4" style="color:#000000;text-align:center;" class=" ">Login</h2>
+        
+		<div id="loginPage-button-bar1" class=" button-bar "></div>
+		
+		<body ng-app="app" ng-controller="loginPageCtrl">
+        <form name="loginform" ng-submit="ValidateCred(cred)">
+            <label class="item item-input" id="loginPage-input2">
+                <span class="input-label">Mobile No.</span>
+                <input type="tel" name="mobileno" placeholder="Enter Mobile Number" ng-model="user.mobileno">
+            </label>
+            <label class="item item-input" id="loginPage-input3">
+                <span class="input-label">Password</span>
+                <input type="password" name="pass" placeholder="Enter Password" ng-model="user.pass">
+            </label>
+			<div class="spacer" style="width: 300px; height: 11.9844px;"></div>
+			<label>
+				<input type="submit" class="button button-dark  button-block" style="font-weight:500;font-size:20px;" value="Login" name="submit">
+			</label>
+        </form>
+		<a ui-sref="signUp" id="loginPage-button5" style="color:#057AF6;" class=" button button-light  button-block button-outline ">Sign Up with EasyEther</a>
+        
+		<div id="loginPage-button-bar3" class=" button-bar "></div>
+        
+		<div id="loginPage-button-bar2" class=" button-bar "></div>
+        
+		<div id="loginPage-button-bar4" class=" button-bar "></div>
+        
+		<a ui-sref="forgetPassword" id="loginPage-button79" class=" button button-dark  button-block button-clear ">Forget Password</a>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,52 @@
+<ion-view title="Sign Up" hide-nav-bar="true" id="page13" style="background-color:#D8D8DD;" class=" ">
+    <ion-content padding="true" class="manual-ios-statusbar-padding" scroll="false">
+	
+        <div class="spacer" style="width: 300px; height: 1.98959px;"></div>
+		<div class="spacer" style="width: 300px; height: 11.9844px;"></div>		
+        <div class="">
+            <img src="img/zTlvytEfTAeqNOQdPh7G_junyi.png" width="60%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+		
+        <h2 id="signUp-heading24" style="color:#000000;text-align:center;" class=" ">Signing Up</h2>
+		
+		<div class="spacer" style="width: 283px; height: 10px;"></div>
+		
+        <div id="signUp-button-bar11" class=" button-bar "></div>
+	
+        <body ng-app="app" ng-controller="signUpCtrl">
+		<form ng-submit="createUser(user)">
+            <label class="item item-input "id="signUp-input12">
+                <span class="input-label">Mobile No.</span>
+                <input type="tel" placeholder="Enter Mobile Number" ng-model="user.mobileno" >
+            </label>
+            <label class="item item-input "id="signUp-input13">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Enter Password" ng-model="user.pass">
+            </label>
+			<label class="item item-input "id="signUp-input14">
+				<span class="input-label">Password</span>
+				<input type="password" name="repass" placeholder="Re-Type Password">
+			</label>
+			<div class="spacer" style="width: 300px; height: 11.9844px;"></div>
+			<label>
+				<input type="submit" class="button button-dark  button-block" style="font-weight:500;font-size:20px;" value="Sign Up!" name="submit">
+			</label>
+		</form>
+		<!--
+		//FOR DEBUGGING PURPOSES
+		//DELETING DATA FROM DATABASE
+		//SHOWING THE DATABASE 
+		<ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+		<ion-item ng-show="users.length" ng-repeat="user in users track by $index" item="user">
+			{{user.mobileno}}
+			<ion-delete-button class="ion-minus-circled" ng-click="onUserDelete(user.user_id)"></ion-delete-button>
+		  </ion-item>
+		</ion-list> 
+		<button class="buton button-dark button-block" 
+		ng-click="data.showDelete = !data.showDelete">Delete User</button>
+		-->
+        
+        <a ui-sref="loginPage" id="signUp-button98" class=" button button-positive  button-block ">Back to Login Page</a>
+		
+    </ion-content>
+</ion-view>
